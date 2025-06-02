@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/Testdevops01/Springboot-App/tree/179209de17dea579b20f898bbeac31ded598ade4/hello-springboot'
+                git 'https://github.com/Testdevops01/Springboot-App.git'
             }
         }
 
