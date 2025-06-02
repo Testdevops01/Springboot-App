@@ -1,0 +1,11 @@
+# Use lightweight OpenJDK image
+FROM openjdk:17-jdk-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy the jar file from target to the container
+COPY target/*.jar app.jar
+
+# Run the jar file
+ENTRYPOINT ["java", "-jar", "app.jar"]
